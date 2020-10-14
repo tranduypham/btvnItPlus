@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+        div, iframe{
+            text-align: center;
+        }
+        h1, hr{
+            margin: 10px 0 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <pre>
+            Thẻ &lt;video&gt;
+    
+            Các atribute: 
+                width : độ rộng
+                height : chiều cao
+                controls : thuộc tính hiển thị thanh điều khiển
+                autoplay : Tự động play video sau khi đã load xong trang html
+            
+            &lt;video&gt;
+                &lt;source src="*.mp4" type="video/mp4"&gt;
+                Trình duyệt của bạn không hỗ trợ video này
+            &lt;/video&gt;
+    
+            Thẻ &lt;source&gt; chứa thuộc tính <b>src</b> khai báo nguồn video
+            nếu video đó không chạy được sẽ hiển thị dòng chữ bên dưới "Trình duyệt của bạn không hỗ trợ video này"
+    
+        </pre>
+
+        <div>
+            <h1>Thẻ video <u>không</u> sử dụng thẻ source</h1>
+            <video src="[Vietsub+Lyric] 𝑳𝒆𝒚𝒍𝒂 - 𝑴𝒆𝒔𝒕𝒐 (1).mp4" controls autoplay width="650px" height="500px">
+                Video của bản không phát được
+            </video>
+        </div>
+        <hr>
+        <div>
+            <h1>Thẻ video <u>có</u> sử dụng thẻ source</h1>
+            <video controls autoplay width="650px" height="500px">
+                <source src="[Vietsub+Lyric] 𝑳𝒆𝒚𝒍𝒂 - 𝑴𝒆𝒔𝒕𝒐 (1).mp4" type="video/mp4">
+                Video của bạn không phát được
+            </video>
+        </div>
+    </div>
+    
+    <hr>
+    <div>
+        <pre>
+            Thẻ &lt;audio&gt; được dùng để nhúng file âm thanh vào file html
+            Có thuộc tính <b>controls</b> để hiển thị thanh điều khiển
+    
+            Bên trong thẻ &lt;audio&gt; có chứa thẻ &lt;source&gt; để ghi nguồn file mp3 thông qua thuộc tính src
+            Nếu không thể chạy được file video, dòng chữ đi kèm sẽ hiện ra
+        </pre>
+
+        <div>
+            <h1>Thẻ audio <u>không</u> sử dụng thẻ source</h1>
+            <audio src="[Vietsub+Lyric] 𝑳𝒆𝒚𝒍𝒂 - 𝑴𝒆𝒔𝒕𝒐.mp3" controls width="100px">
+                Không hiển thị được file của bạn
+            </audio>
+        </div>
+        <hr>
+        <div>
+            <h1>Thẻ audio <u>có</u> sử dụng thẻ source</h1>
+            <audio controls>
+                <source src="[Vietsub+Lyric] 𝑳𝒆𝒚𝒍𝒂 - 𝑴𝒆𝒔𝒕𝒐.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+    <hr>
+    
+    <div>
+        <pre>
+            Thưc hiện nhúng video vào file html
+        </pre>
+
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HM2nQ9wMwHo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <h1>Không chạy được</h1>
+    </div>
+    
+</body>
+
+</html>
