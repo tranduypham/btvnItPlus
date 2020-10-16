@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Emmet là những cú pháp viết tắt giúp cho việc viết tag html dễ dàng hơn
+        ví dụ
+    </pre>
+    ctrl + Enter để xuống dòng mới
+    <!-- tagname -->
+    div
+    <div></div>
+    bq
+    <blockquote></blockquote>
+
+    <!-- Child -->
+    nav>ul>li
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- Sibling (Tức là sinh ra những thẻ ngang hàng nhau) -->
+    div+p+q
+    <div></div>
+    <p></p>
+    <q></q>
+
+    <!-- Multiplication -->
+    ul>li*5
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    div*3>ul*2>li*6
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- Lorem (Đoạn giả văn bản) -->
+    Lorem5 dùng để in ra 5 từ
+    Lorem ipsum dolor sit amet.
+
+    lorem*4 dùng để in đoạn lorem 4 lần
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ducimus tempore ratione repudiandae nam minima, sint veritatis nemo laudantium iusto necessitatibus nisi id fugiat at voluptatem totam explicabo deserunt optio?
+    Fugiat hic maxime eos perspiciatis harum laboriosam laborum repellendus officiis accusantium quaerat inventore odit beatae vel quis facilis, nostrum corrupti, soluta qui asperiores! Dignissimos ullam optio praesentium, cum nisi deleniti!
+    Accusamus provident cumque eum perspiciatis! Quasi, laborum sit. Delectus ipsam fugiat perferendis adipisci. Odio, omnis repellat. Nisi veniam, obcaecati itaque ex aspernatur quasi, eaque consequatur odio officia hic tempore. Maxime?
+    Asperiores, eius provident ipsam libero pariatur sint aperiam unde saepe laudantium harum aliquid dolore deserunt itaque accusamus alias neque, delectus rem doloremque repudiandae perferendis ab, minima et reprehenderit. Quibusdam, quidem!
+
+    <!-- id và class -->
+    #header
+    <div id="header"></div>
+    .header
+    <div class="header"></div>
+    div.header.footer#left
+    <div class="header footer" id="left"></div>
+    form#login.dark_modal.widemodal.leftmodal
+    <form action="" id="login" class="dark_modal widemodal leftmodal"></form>
+    a.link
+    <a href="" class="link"></a>
+    section.banner.2choice>option.language#section1*5
+    <section class="banner 2choice">
+        <option value="" class="language" id="section1"></option>
+        <option value="" class="language" id="section1"></option>
+        <option value="" class="language" id="section1"></option>
+        <option value="" class="language" id="section1"></option>
+        <option value="" class="language" id="section1"></option>
+    </section>
+
+    <!-- Custom artribute  -->
+    p[title="hello world"][id="para"][name="intro"].demo
+    <p title="hello world" id="para" name="intro" class="demo"></p>
+
+    <!-- text :{} -->
+    a{Click me!}
+    <a href="">Click me!</a>
+    div#demo.demo1>p#para1>{Nếu muốn biết thêm thông tin xin hãy }+a{click vào đây}+{. Xin cảm ơn.}
+    <div id="demo" class="demo1">
+        <p id="para1">
+            Nếu muốn biết thêm thông tin xin hãy 
+            <a href="">click vào đây</a>
+            . Xin cảm ơn.
+        </p>
+    </div>
+    div>(p{Hello}>(p>div)+(div>p{hello}+a.demo{click me})+p)*2
+    <div>
+        <p>
+            Hello
+            <p>
+                <div></div>
+            </p>
+            <div>
+                <p>hello</p>
+                <a href="" class="demo">click me</a>
+            </div>
+            <p></p>
+        </p>
+        <p>
+            Hello
+            <p>
+                <div></div>
+            </p>
+            <div>
+                <p>hello</p>
+                <a href="" class="demo">click me</a>
+            </div>
+            <p></p>
+        </p>
+    </div>
+
+    <!-- Item auto number -->
+    ul>li.creater$*5
+    <ul>
+        <li class="creater1"></li>
+        <li class="creater2"></li>
+        <li class="creater3"></li>
+        <li class="creater4"></li>
+        <li class="creater5"></li>
+    </ul>
+
+    div>a.link$*5
+    <div>
+        <a href="" class="link1"></a>
+        <a href="" class="link2"></a>
+        <a href="" class="link3"></a>
+        <a href="" class="link4"></a>
+        <a href="" class="link5"></a>
+    </div>
+
+    <!-- Climb up bằng dấu ^ -->
+    div>div>p+a.demo{clickme}^div*2+p
+    <div>
+        <div>
+            <p></p>
+            <a href="" class="demo">clickme</a>
+        </div>
+        <div></div>
+        <div></div>
+        <p></p>
+    </div>
+
+    <!-- Grouping -->
+    table.demo#demotbl>(tr#row>th#col$*5)+(tr#row$$>td#col$*5)*5
+    <table class="demo" id="demotbl">
+        <tr id="row">
+            <th id="col1"></th>
+            <th id="col2"></th>
+            <th id="col3"></th>
+            <th id="col4"></th>
+            <th id="col5"></th>
+        </tr>
+        <tr id="row01">
+            <td id="col1"></td>
+            <td id="col2"></td>
+            <td id="col3"></td>
+            <td id="col4"></td>
+            <td id="col5"></td>
+        </tr>
+        <tr id="row02">
+            <td id="col1"></td>
+            <td id="col2"></td>
+            <td id="col3"></td>
+            <td id="col4"></td>
+            <td id="col5"></td>
+        </tr>
+        <tr id="row03">
+            <td id="col1"></td>
+            <td id="col2"></td>
+            <td id="col3"></td>
+            <td id="col4"></td>
+            <td id="col5"></td>
+        </tr>
+        <tr id="row04">
+            <td id="col1"></td>
+            <td id="col2"></td>
+            <td id="col3"></td>
+            <td id="col4"></td>
+            <td id="col5"></td>
+        </tr>
+        <tr id="row05">
+            <td id="col1"></td>
+            <td id="col2"></td>
+            <td id="col3"></td>
+            <td id="col4"></td>
+            <td id="col5"></td>
+        </tr>
+    </table>
+
+    input:text.hello
+    <input type="text" name="" id="" class="hello">
+</body>
+</html>
