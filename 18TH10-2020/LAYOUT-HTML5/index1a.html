@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .site-warp{
+            width: 100%;
+            margin: 0 auto;
+            /* căn giữa màn hình  */
+            height: 1000px;
+        }
+        .header{
+            width: 100%;
+            /* height: 200px; */
+            height: 30%;
+            color:whitesmoke;
+            background-color: rgb(71, 71, 71);
+            font-size: 50px;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .nav{
+            width: 100%;
+            height: 5%;
+            background-color: grey;
+            font-size: 20px;
+        }
+
+        .nav ul{
+            list-style: none;
+            margin: 5px 30px;
+        }
+        .nav ul>li{
+            display: inline-block;
+            width: 150px;
+            padding: 10px 0;
+        }
+        .nav ul>li>a{
+            text-decoration: none;
+            color: ghostwhite;
+        }
+        .nav ul>li>a:hover{
+            color: black;
+        }
+        .content{
+            width: 100%;
+            margin: 5px 0;
+            height: 70%;
+            height: 70%;
+        }
+        .sidebar{
+            width: 20%;
+            height: 100%;
+            background-color: dimgray;
+            color: gainsboro;
+            padding: 20px;
+            text-indent: 10px;
+            line-height: 25px;
+            position: sticky;
+            top: 0;
+        }
+        .sidebar-left{
+            float: left;
+        }
+        .sidebar-right{
+            float: right;
+        }
+        .main-content{
+            /* height: auto; */
+            width: 60%;
+            height: 100%;
+            float: left;
+            background-color: lightgray;
+            color: rgb(107, 107, 107);
+            padding: 20px;
+            line-height: 30px;
+            font-style: oblique;
+            overflow: auto;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .footer{
+            width: 100%;
+            /* height: 150px; */
+            height: 10%;
+            background-color:rgb(71, 71, 71);
+            color: ivory;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="site-warp">
+        <header class="header">
+            <h1>This is header</h1>
+        </header> <!-- end .header -->
+        
+        <nav class="nav">
+            <ul class="clearfix">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Kinh tế</a></li>
+                <li><a href="#">Văn hóa</a></li>
+                <li><a href="#">Chính trị</a></li>
+                <li><a href="#">Xã hội</a></li>
+            </ul>
+        </nav><!-- end .nav -->
+
+        <div class="content clearfix">
+
+            <aside class="sidebar sidebar-left">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aspernatur vitae adipisci deleniti quos? Quo quasi voluptas distinctio pariatur numquam maiores quisquam ullam natus non minus. Ex laborum consectetur quibusdam?Quasi, amet maxime perferendis animi eos quas expedita fugiat illum minus quaerat enim vitae numquam voluptatum unde eligendi, blanditiis voluptate consectetur! Vero eligendi, veritatis a fugiat quidem illo earum rerum.
+                </p>
+            </aside><!-- end .sidebar-left -->
+
+            <main class="main-content">
+                <h2>This is main content</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae quisquam tenetur saepe perspiciatis illum delectus eaque earum cumque facere error maiores alias, harum voluptates repellendus aliquid quae iure tempore.
+                    Eos doloremque iure incidunt, impedit voluptate, voluptatum, aspernatur sunt nemo aperiam accusantium earum? Adipisci nihil quisquam dolor quae deleniti, at exercitationem facilis, fugiat voluptatum iste delectus, cum eum doloribus sequi.
+                    Eaque tempore libero, magni nostrum vero id dolore dolor mollitia! Labore, iusto! Impedit atque molestias eum, suscipit voluptatum facilis aut voluptate officia corrupti, saepe tempora harum delectus id, consequuntur temporibus.
+                    Fugit corrupti error odio rem eius aspernatur nesciunt delectus quaerat numquam doloremque? Odio repudiandae incidunt doloremque expedita deleniti quos nam porro corrupti accusantium, neque error quibusdam, et exercitationem sit similique!
+                    Labore earum excepturi alias provident sapiente dignissimos eveniet iure aperiam a, itaque id accusamus officia veritatis qui voluptates atque odio aspernatur ut temporibus. Quia expedita eligendi id quasi. Minima, ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat blanditiis velit dolores maiores ex dolor iste tenetur, quis aperiam voluptas nesciunt provident, sed deleniti optio porro voluptate! At, assumenda?
+                    Dolor reiciendis corrupti omnis iure vitae voluptatem voluptate libero commodi odit quisquam! Quod, expedita reiciendis voluptates tempore repellat error laboriosam qui natus quos in perspiciatis, consectetur cumque impedit, adipisci sequi?
+                    Nemo earum accusantium consequatur molestiae eaque excepturi labore nostrum doloribus non ratione quis, quidem iusto laudantium assumenda in veniam libero voluptatem aperiam tempore, aliquam magnam. Sunt eius sequi perferendis ea.
+                    Ratione at eaque eos ea voluptate illum optio quos, minus saepe, provident rerum in porro sint atque cupiditate autem rem suscipit fugiat nam impedit molestias perferendis cumque labore. Error, aliquid!
+                    Illo quia voluptatibus enim iusto fuga. Iste consequatur, quasi possimus aliquid alias eligendi ipsam, atque ullam iure quidem error reiciendis dolores voluptas? Ullam deserunt, vitae dignissimos unde blanditiis atque distinctio?
+                    Cupiditate dolores error minima facere veritatis velit labore! In fugiat tempora recusandae magni temporibus nihil labore, aperiam nobis repellendus aliquam nemo? Aliquam possimus debitis illum. Recusandae voluptates nesciunt perspiciatis facere?
+                    Obcaecati ex quam alias praesentium, in ut quas, debitis labore error qui ullam eligendi odit quaerat quod voluptatibus et saepe dolorum atque eveniet vitae, rem ratione. Voluptas dolorem incidunt assumenda.
+                    Nam veritatis voluptatum quasi nesciunt minus quod praesentium repudiandae? Iusto repellat quidem, itaque sequi praesentium laboriosam eligendi blanditiis. Ratione eveniet earum necessitatibus consequatur tempore iure itaque exercitationem labore dolore quo?
+                    Eligendi quisquam, laboriosam odio pariatur fugiat dignissimos blanditiis debitis, nostrum unde dolores eaque tempora voluptatibus? Laboriosam reprehenderit temporibus, omnis voluptate ea magni voluptas. Dicta et magni saepe dolor tempore placeat?
+                    Amet ducimus rem quibusdam, cum est omnis neque tempora laborum explicabo. Distinctio, nisi molestias! Quis, fugit! Hic vel quos, deserunt reprehenderit magnam tenetur at, ratione expedita nulla amet neque quae!
+                </p>
+            </main><!-- end .main-content -->
+
+            <aside class="sidebar sidebar-right">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laboriosam id nobis ea provident molestiae quasi doloremque adipisci tempora dolore, voluptatibus fuga ab amet consequuntur sit necessitatibus cum sint fugiat!Explicabo expedita, similique quo nesciunt saepe animi voluptate fuga itaque reiciendis dolor architecto, sit excepturi nostrum laboriosam nisi eligendi ea harum minus amet deleniti maiores minima? Consequatur suscipit delectus minus!
+                </p>
+            </aside><!-- end .sidebar-right -->
+        </div><!-- end .content -->
+
+        <footer class="footer">
+            <h4>This is footer</h4>
+            <p>
+                Copyright W3school - All Rights Reserved
+            </p>
+        </footer><!-- end .footer -->
+    </div><!-- end .site-wrap -->
+</body>
+</html>

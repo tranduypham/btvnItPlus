@@ -12,7 +12,7 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .site-warp{
-            width: 100%;
+            width: 1200px;
             margin: 0 auto;
             /* căn giữa màn hình  */
             height: 1000px;
@@ -53,7 +53,6 @@
         .content{
             width: 100%;
             margin: 5px 0;
-            height: 70%;
             height: 70%;
         }
         .sidebar{
@@ -104,29 +103,29 @@
 </head>
 <body>
     <div class="site-warp">
-        <div class="header">
+        <header class="header">
             <h1>This is header</h1>
-        </div> <!-- end .header -->
+        </header> <!-- end .header -->
         
-        <div class="nav">
-            <ul>
+        <nav class="nav">
+            <ul class="clearfix"><!-- Thẻ này cũng phải có clearfix tại vì các thẻ li bên trong để float, thẻ mẹ ul phải có class clear fix mới chứa được các thẻ con này 😊 -->
                 <li><a href="#">Trang chủ</a></li>
                 <li><a href="#">Kinh tế</a></li>
                 <li><a href="#">Văn hóa</a></li>
                 <li><a href="#">Chính trị</a></li>
                 <li><a href="#">Xã hội</a></li>
             </ul>
-        </div><!-- end .nav -->
+        </nav><!-- end .nav -->
 
         <div class="content clearfix">
 
-            <div class="sidebar sidebar-left">
+            <aside class="sidebar sidebar-left">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aspernatur vitae adipisci deleniti quos? Quo quasi voluptas distinctio pariatur numquam maiores quisquam ullam natus non minus. Ex laborum consectetur quibusdam?Quasi, amet maxime perferendis animi eos quas expedita fugiat illum minus quaerat enim vitae numquam voluptatum unde eligendi, blanditiis voluptate consectetur! Vero eligendi, veritatis a fugiat quidem illo earum rerum.
                 </p>
-            </div><!-- end .sidebar-left -->
+            </aside><!-- end .sidebar-left -->
 
-            <div class="main-content">
+            <main class="main-content">
                 <h2>This is main content</h2>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae quisquam tenetur saepe perspiciatis illum delectus eaque earum cumque facere error maiores alias, harum voluptates repellendus aliquid quae iure tempore.
@@ -145,21 +144,21 @@
                     Eligendi quisquam, laboriosam odio pariatur fugiat dignissimos blanditiis debitis, nostrum unde dolores eaque tempora voluptatibus? Laboriosam reprehenderit temporibus, omnis voluptate ea magni voluptas. Dicta et magni saepe dolor tempore placeat?
                     Amet ducimus rem quibusdam, cum est omnis neque tempora laborum explicabo. Distinctio, nisi molestias! Quis, fugit! Hic vel quos, deserunt reprehenderit magnam tenetur at, ratione expedita nulla amet neque quae!
                 </p>
-            </div><!-- end .main-content -->
+            </main><!-- end .main-content -->
 
-            <div class="sidebar sidebar-right">
+            <aside class="sidebar sidebar-right">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laboriosam id nobis ea provident molestiae quasi doloremque adipisci tempora dolore, voluptatibus fuga ab amet consequuntur sit necessitatibus cum sint fugiat!Explicabo expedita, similique quo nesciunt saepe animi voluptate fuga itaque reiciendis dolor architecto, sit excepturi nostrum laboriosam nisi eligendi ea harum minus amet deleniti maiores minima? Consequatur suscipit delectus minus!
                 </p>
-            </div><!-- end .sidebar-right -->
+            </aside><!-- end .sidebar-right -->
         </div><!-- end .content -->
 
-        <div class="footer">
+        <footer class="footer">
             <h4>This is footer</h4>
             <p>
                 Copyright W3school - All Rights Reserved
             </p>
-        </div><!-- end .footer -->
+        </footer><!-- end .footer -->
     </div><!-- end .site-wrap -->
 </body>
 </html>
