@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div class="Main-content clearfix">
+        <aside class="left content-left">
+            <div>
+                <p>Tạo tài khoản</p>
+                <p>Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi</p>
+                <img src="graphic-map.png" alt="Ảnh TIKI 1">
+            </div>
+
+        </aside>
+
+        <aside class="right content-right">
+            <div>
+                <nav class="top-menu">
+                    <ul>
+                        <li>Đăng nhập</li>
+                        <li>Tạo tài khoản</li>
+                    </ul>
+                </nav>
+                <main>
+                    <form action="#">
+                        <table>
+                            <tr>
+
+                                <td><label for="hoTen">Họ Tên</label></td>
+                                <td colspan="3">
+                                    <input type="text" name="hoTen" id="hoTen" placeholder="Nhập họ tên">
+                                    <!-- End of họ tên -->
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td><label for="SDT">SĐT</label></td>
+                                <td colspan="2">
+                                    <input type="tel" name="SDT" id="SDT" placeholder="Nhập số điện thoại">
+                                </td>
+                                <td>
+                                    <button class="button" id="1stBut">Nhập mã xác thực</button>
+                                </td>
+
+                            </tr>
+                            <tr>
+
+
+                                <td><label for="maXacThuc">Mã xác thực</label></td>
+                                <td colspan="3">
+                                    <input type="text" name="maXacThuc" id="maXacThuc"
+                                        placeholder="Nhập mã xác thực gửi tới số điện thoạn trên">
+                                    <!-- End of mã xác thực -->
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td><label for="email">email</label></td>
+                                <td colspan="3">
+                                    <input type="email" name="email" id="email" placeholder="Nhập email">
+                                    <!-- End of email -->
+                                </td>
+                            </tr>
+                            <tr>
+
+
+                                <td><label for="gioiTinh">Giới tính</label></td>
+                                <td class="gioiTinh">
+                                    <input type="radio" name="gioiTinh" style= "width:15px; height:15px;" id="nam">
+                                    Nam
+                                </td>
+                                <td class="gioiTinh">
+                                    <input type="radio" name="gioiTinh" style= "width:15px; height:15px;" id="nu">
+                                    Nữ
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ngaySinh">Ngày sinh</label></td>
+                                <td>
+                                    <select id="ngaySinh">
+                                        <script>
+                                            $(document).ready(function () {
+                                                $("#ngaySinh").html("<option value='-1'>Ngày</option>");
+                                                for (var i = 1; i <= 31; i++) {
+                                                    if (i < 10) {
+                                                        $("#ngaySinh").append("<option value = " + i + ">" + "0" + i + "</option>");
+                                                    } else {
+                                                        $("#ngaySinh").append("<option value = " + i + ">" + i + "</option>");
+                                                    }
+
+                                                }
+                                            });    
+                                        </script>
+                                    </select>
+                                    <!-- End of ngay sinh -->
+                                </td>
+                                <td>
+                                    <select id="thangSinh">
+                                        <script>
+                                            $(document).ready(function () {
+                                                $("#thangSinh").html("<option value='-1'>Tháng</option>");
+                                                for (var i = 1; i <= 12; i++) {
+                                                    $("#thangSinh").append("<option value = " + i + ">" + "Tháng " + i + "</option>");
+                                                }
+                                            });    
+                                        </script>
+                                    </select>
+                                    <!-- End of thang sinh -->
+                                </td>
+                                <td>
+                                    <select id="namSinh">
+                                        <script>
+                                            $(document).ready(function () {
+                                                $("#namSinh").html("<option value='-1'>Năm</option>");
+                                                for (var i = 1930; i <= 2010; i++) {
+                                                    $("#namSinh").append("<option value = " + i + ">" + i + "</option>");
+                                                }
+                                            });    
+                                        </script>
+                                    </select>
+                                    <!-- End of nam sinh -->
+                                    <!-- End of Birthday -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="3"><input type="checkbox" name="check" style= "width:15px; height:15px;" id="check">
+                                <span>
+                                    Nhận các thông báo và
+                                    chương
+                                    trình khuyến
+                                    mãi của
+                                    Tiki qua email
+                                </span>
+                                    <!-- End of check box -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="3"><button class="button" id="2ndBut">Tạo tài khoản</button>
+                                    <!-- End of confirm button -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="3">
+                                    <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán sản phẩm theo
+                                        <a href="#">điều kiến sự dụng và chính sách của Tiki</a></span>
+                                    <!-- End of Term and condition -->
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </main>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
