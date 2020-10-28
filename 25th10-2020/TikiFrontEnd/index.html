@@ -75,22 +75,22 @@
 
                                 <td><label for="gioiTinh">Giới tính</label></td>
                                 <td class="gioiTinh">
-                                    <input type="radio" name="gioiTinh" style= "width:15px; height:15px;" id="nam">
+                                    <input type="radio" name="gioiTinh" style="width:15px; height:15px;" id="nam">
                                     Nam
                                 </td>
                                 <td class="gioiTinh">
-                                    <input type="radio" name="gioiTinh" style= "width:15px; height:15px;" id="nu">
+                                    <input type="radio" name="gioiTinh" style="width:15px; height:15px;" id="nu">
                                     Nữ
                                 </td>
                                 <td></td>
                             </tr>
                             <tr>
                                 <td><label for="ngaySinh">Ngày sinh</label></td>
-                                <td>
+                                <td class="custom-select">
                                     <select id="ngaySinh">
                                         <script>
                                             $(document).ready(function () {
-                                                $("#ngaySinh").html("<option value='-1'>Ngày</option>");
+                                                $("#ngaySinh").html("<option disabled selected>Ngày</option>");
                                                 for (var i = 1; i <= 31; i++) {
                                                     if (i < 10) {
                                                         $("#ngaySinh").append("<option value = " + i + ">" + "0" + i + "</option>");
@@ -102,46 +102,55 @@
                                             });    
                                         </script>
                                     </select>
+                                    <span class="custom-arrow"></span>
                                     <!-- End of ngay sinh -->
                                 </td>
-                                <td>
+                                <td class="custom-select">
                                     <select id="thangSinh">
                                         <script>
                                             $(document).ready(function () {
-                                                $("#thangSinh").html("<option value='-1'>Tháng</option>");
+                                                $("#thangSinh").html("<option disabled selected>Tháng</option>");
                                                 for (var i = 1; i <= 12; i++) {
-                                                    $("#thangSinh").append("<option value = " + i + ">" + "Tháng " + i + "</option>");
+                                                    if (i < 10) {
+                                                        $("#thangSinh").append("<option value = " + i + ">" + "0" + i + "</option>");
+                                                    }else{
+                                                        $("#thangSinh").append("<option value = " + i + ">" + i + "</option>");
+                                                    }
+                                                    
                                                 }
                                             });    
                                         </script>
                                     </select>
+                                    <span class="custom-arrow"></span>
                                     <!-- End of thang sinh -->
                                 </td>
-                                <td>
+                                <td class="custom-select">
                                     <select id="namSinh">
                                         <script>
                                             $(document).ready(function () {
-                                                $("#namSinh").html("<option value='-1'>Năm</option>");
+                                                $("#namSinh").html("<option disabled selected>Năm</option>");
                                                 for (var i = 1930; i <= 2010; i++) {
                                                     $("#namSinh").append("<option value = " + i + ">" + i + "</option>");
                                                 }
                                             });    
                                         </script>
                                     </select>
+                                    <span class="custom-arrow"></span>
                                     <!-- End of nam sinh -->
                                     <!-- End of Birthday -->
                                 </td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td colspan="3"><input type="checkbox" name="check" style= "width:15px; height:15px;" id="check">
-                                <span>
-                                    Nhận các thông báo và
-                                    chương
-                                    trình khuyến
-                                    mãi của
-                                    Tiki qua email
-                                </span>
+                                <td colspan="3"><input type="checkbox" name="check" style="width:15px; height:15px;"
+                                        id="check">
+                                    <span>
+                                        Nhận các thông báo và
+                                        chương
+                                        trình khuyến
+                                        mãi của
+                                        Tiki qua email
+                                    </span>
                                     <!-- End of check box -->
                                 </td>
                             </tr>
@@ -154,7 +163,8 @@
                             <tr>
                                 <td></td>
                                 <td colspan="3">
-                                    <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán sản phẩm theo
+                                    <span>Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán sản phẩm
+                                        theo
                                         <a href="#">điều kiến sự dụng và chính sách của Tiki</a></span>
                                     <!-- End of Term and condition -->
                                 </td>

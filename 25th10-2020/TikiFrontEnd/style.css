@@ -22,7 +22,7 @@ body{
 .Main-content{
     width: 50%;
     height: 700px;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(245, 245, 245);
     margin: 0 auto;
     margin-top: 100px;
 
@@ -65,7 +65,7 @@ body{
 }
 /* Menu top */
 .top-menu{
-    border-bottom: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(228, 228, 228);
 }
 .top-menu>ul{
     list-style: none;
@@ -79,8 +79,8 @@ body{
     padding: 25px 0 15px 0;
     cursor: pointer;
     border-bottom: 3px solid transparent;
-    transition: border-bottom 0.2s;
-    transition: color 0.1s ease-out;
+    transition: border-bottom 0.25s;
+    transition: color 0s ease-out;
 }
 .top-menu>ul>li:first-child{
     margin-right: -5px;
@@ -119,10 +119,59 @@ body{
     outline: white auto 1px;
 } */
 .content-right table tr td select{
-    width: 80%;
+    width: 68%;
     padding: 10px;
     font-size: 1rem;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 11%;
+    
+    
+
+    /* Replace the old arrow */
+    /* appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; */
+
+    
 }
+.content-right table tr td select:focus{
+    border: 0.5px solid rgb(131, 130, 130);
+}
+.custom-select{
+    height: auto;
+    position: relative;
+}
+.custom-arrow{
+    background-color: white;
+    border-radius: 0 10px 10px 0 ;
+    border-left: 1px solid rgb(206, 206, 206);
+    /* opacity: 0.5; */
+    pointer-events: none;
+    position: absolute;
+    top: 20%;
+    right: 33%;
+    height: 60%;
+    width: 25px;
+    /* display: block; */
+}
+.custom-arrow::after,.custom-arrow::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.custom-arrow::after{
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid rgb(122, 122, 122);
+    top: 40%;
+    left: 25%;
+}
+/* selecr:active,select:hover~.custom-arrow::after{
+    border-bottom: 0.5em solid rgb(202, 23, 23);
+    border-top: 0 solid rgb(122, 122, 122);
+    top: 35%;
+} */
 
 .content-right table td:first-child{
     /* background-color: yellow; */
