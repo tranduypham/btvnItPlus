@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+
+    <style>
+        :root {
+            --main-color: #1769ff;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <style type="text/css">
+        header {
+            background: #f4f2f0;
+            padding: 40px 0;
+        }
+
+        header .logo a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            color: black;
+            letter-spacing: 6px;
+            text-decoration: none;
+        }
+
+        header .nav {
+            /* background-color: blue; */
+            position: relative;
+        }
+
+        header .nav ul {
+            list-style: none;
+            position: absolute;
+            right: 0;
+            /* background-color: black; */
+
+            /* margin-left: 5vh; */
+        }
+
+
+        header .nav ul li {
+            float: left;
+            /* display: inline-block; */
+            margin: 0 2.5vh;
+        }
+
+        header .nav ul li a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            text-decoration: none;
+            color: #333333;
+        }
+
+        header .nav ul>li>a:hover {
+            color: var(--main-color);
+        }
+
+        header .hire-me {
+            margin-top: 15px;
+        }
+
+        header .hire-me a {
+            /* align-content: center; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: var(--main-color);
+            padding: 1vh 2vh;
+            border: 1px solid var(--main-color);
+            border-radius: 40px;
+            text-decoration: none;
+            margin-left: 10px;
+            transition: text-shadow 0.05s;
+            transition: box-shadow 0.05s;
+            transition: color 0.15s;
+        }
+
+        header .hire-me a:hover {
+            text-shadow: 1px 3px 5px #e7e7e7;
+            box-shadow: 1px 2px 3px #b9b7b7;
+            color: #0077ff;
+            border: 1px solid #0077ff;
+        }
+
+        @media screen and (max-width: 1024px) {
+            header .hire-me a {
+                padding: 0.8vh 1.2vh;
+            }
+        }
+
+        @media screen and (max-width: 990px) {
+            header {
+                text-align: center;
+            }
+
+            header .logo {
+                text-align: center;
+                width: 100%;
+            }
+
+            header .nav {
+                width: 100%;
+                /* text-align: center; */
+            }
+
+            header .nav ul {
+                /* float: none; */
+                /* text-align: center; */
+                position: relative;
+                right: auto;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            header .nav ul li {
+                float: none;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            header .hire-me {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+                /* margin-top: 35px; */
+                margin-left: -5px;
+            }
+
+            header .hire-me a {
+                /* font-size: 15px; */
+            }
+        }
+    </style>
+    <header class="clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-lg-4 col-12">
+                    <a href="#">PORTFOLIO</a>
+                </div>
+                <dir class="nav col-lg-6 col-12">
+                    <ul class="clearfix">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Demo</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </dir>
+                <div class="col-lg-2 col-12 hire-me">
+                    <a href="#">Hire me!</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <style type="text/css">
+        .banner {
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .banner img {
+            width: 100%;
+            display: block;
+            margin-top: -10%;
+            position: sticky;
+            bottom: 0;
+        }
+
+        .banner .banner-text {
+            position: absolute;
+            width: 40%;
+            padding-top: 10%;
+            padding-right: 5%;
+            top: 0;
+            right: 0;
+        }
+
+        .banner .banner-text .first-text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 36px;
+            color: black;
+            margin-bottom: 30px;
+            opacity: 0.7;
+        }
+
+        .banner .banner-text .second-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            color: black;
+            margin-bottom: 40px;
+            word-spacing: 4px;
+        }
+
+        .banner .banner-text .third-text {
+            font-family: 'Raleway', sans-serif;
+            word-spacing: 1px;
+            font-size: 16px;
+            color: black;
+            opacity: 0.65;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+        }
+
+        .banner .banner-text .see-my-work {
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            /* word-spacing: 1px; */
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: var(--main-color);
+            padding: 20px 50px;
+            border-radius: 40px;
+            box-shadow: 0 10px 10px 0 #d1d8e6;
+            transition: background-color 0.15s ease-in-out;
+            transition: box-shadow 0.05s ease-in-out;
+        }
+
+        .banner .banner-text .see-my-work:hover {
+            box-shadow: 0 10px 10px 0 #b9b7b7;
+            background-color: #0059fd;
+        }
+
+        @media screen and (max-width: 1470px) {
+            .banner .banner-text {
+                position: relative;
+                background: rgb(235, 234, 232);
+                background: linear-gradient(180deg, rgba(235, 234, 232, 1) 0%, rgba(244, 242, 240, 1) 50%);
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding: 40px 10px;
+            }
+
+            .banner .banner-text .first-text {
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+
+            .banner .banner-text .second-text {
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+
+            .banner .banner-text .third-text {
+                margin-bottom: 20px;
+            }
+
+            .banner {
+                max-width: 1470px;
+                overflow: hidden;
+            }
+
+            .banner img {
+                width: 180%;
+                margin-top: -20%;
+            }
+        }
+    </style>
+    <section class="banner">
+        <img src="Img.jpg" alt="Banner image">
+        <div class="banner-text">
+            <h1 class="first-text">
+                Hello, I’m Deeje
+            </h1>
+            <h2 class="second-text">
+                Expert in Graphic
+                <br>Design &Development
+            </h2>
+            <p class="third-text">
+                Currently available for select projects, collaborations and consulting.Currently available for select
+                projects, collaborations and consulting.
+            </p>
+            <a href="#" class="see-my-work">See My work</a>
+        </div>
+    </section>
+    <style type="text/css">
+        .about {
+            padding: 90px 0;
+        }
+
+        .about h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            color: black;
+            letter-spacing: 9px;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .about .service-box {
+            text-align: center;
+            padding: 50px 50px 60px 50px;
+        }
+
+        .about .service-box h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            position: relative;
+        }
+
+        .about .service-box h4::after {
+            content: '';
+            height: 4px;
+            width: 40px;
+            background-color: var(--main-color);
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin: 30px 0;
+            transform: translateX(-50%);
+        }
+
+        .about .service-box p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            color: black;
+            opacity: 0.7;
+            margin: 60px 0;
+        }
+
+        .about .service-box i {
+            color: var(--main-color);
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+
+        .about .service-box {
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .about .service-box:hover {
+            cursor: pointer;
+            box-shadow: 5px 20px 20px rgb(214, 214, 214), -5px 0px 20px rgb(214, 214, 214);
+            background-color: var(--main-color);
+        }
+
+        .service-box:hover>i,
+        .service-box:hover>h4,
+        .service-box:hover>p {
+            color: white;
+        }
+
+        .service-box>h4::after {
+            transition: width 0.3s ease-out;
+        }
+
+        .service-box:hover>h4::after {
+            background-color: white;
+            width: 150px;
+        }
+    </style>
+    <section class="about container">
+        <h1>SERVICE</h1>
+        <div class="row">
+            <div class="col-12 col-md-4 service-box">
+                <i class="fas fa-fill-drip"></i>
+                <h4>Web Design</h4>
+                <p>
+                    Well we're movin' on up to the east side. To a deluxe apartment in the sky.
+                </p>
+            </div>
+            <div class="col-12 col-md-4 service-box">
+                <i class="far fa-gem"></i>
+                <h4>Mobile App</h4>
+                <p>
+                    Tracking immunizations has never been easier or more secure...
+                </p>
+            </div>
+            <div class="col-12 col-md-4 service-box">
+                <i class="fas fa-magic"></i>
+                <h4>Barnding</h4>
+                <p>
+                    Well we're movin' on up to the east side. To a deluxe apartment in the sky.
+                </p>
+            </div>
+        </div>
+    </section>
+    <style type="text/css">
+        .portfolio {
+            background-color: #F4F4F4;
+            padding: 170px 0;
+        }
+
+        .portfolio h1 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 85px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 9px;
+        }
+
+        .portfolio .porfolio-pic {
+            position: relative;
+            overflow: hidden;
+            /* margin-bottom: 3vh; */
+        }
+
+        .portfolio .porfolio-pic img {
+            /* position: absolute; */
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .portfolio .ovelay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #0050e4b2;
+            cursor: pointer;
+            /* overflow: hidden; */
+            /* transform: scale(0); */
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .portfolio .porfolio-pic:hover .ovelay {
+            /* transform: scale(1); */
+            /* overflow: hidden; */
+            opacity: 1;
+        }
+
+        .portfolio .porfolio-pic .ovelay::after {
+            content: '';
+            width: 95%;
+            height: 85%;
+            position: absolute;
+            bottom: 7.5%;
+            left: 2.5%;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+            /* box-sizing: border-box; */
+
+            /* transform: translate(-50%,50%); */
+            transform: scale(0.3, 1);
+            transition: 0.9s ease-out;
+        }
+
+        .portfolio .porfolio-pic:hover .ovelay::after {
+            transform: scale(1, 1);
+        }
+
+        .portfolio .porfolio-pic .ovelay::before {
+            content: '';
+            width: 85%;
+            height: 95%;
+            position: absolute;
+            bottom: 2.5%;
+            left: 7.5%;
+            border-left: 1px solid rgb(255, 255, 255);
+            border-right: 1px solid rgb(255, 255, 255);
+            transform: scale(1, 0.3);
+            transition: transform 0.9s ease-out;
+        }
+
+        .portfolio .porfolio-pic:hover .ovelay::before {
+            transform: scale(1, 1);
+        }
+
+        .portfolio .ovelay .text {
+            width: 100%;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-51%, -50%);
+            text-align: center;
+        }
+
+        .portfolio .ovelay .text .brand {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+        }
+
+        .portfolio .ovelay .text .brand-content {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: bolder;
+            margin: 0;
+        }
+
+        .portfolio .portfolio-box {
+            margin-top: 3vh;
+        }
+    </style>
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <h1>Portfolio</h1>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-5.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-4.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-3.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-2.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-1.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 portfolio-box">
+                    <div class="porfolio-pic">
+                        <img src="Img-5.png" alt="ảnh 5">
+                        <div class="ovelay">
+                            <div class="text">
+                                <p class="brand">
+                                    Branding
+                                </p>
+                                <p class="brand-content">
+                                    Home Decoration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .cnt {
+            padding: 120px 0;
+        }
+
+        .cnt .first {
+            padding-right: 5vh;
+        }
+
+        .cnt .first h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4vh;
+            text-transform: capitalize;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .cnt .first p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2vh;
+            color: black;
+        }
+
+        .cnt .second {
+            padding-left: 5vh;
+            padding-top: 3vh;
+        }
+
+        .cnt .second a {
+            text-decoration: none;
+            font-size: 2vh;
+            color: var(--main-color);
+            padding: 1vh 3vh;
+            border: 1px solid var(--main-color);
+            border-radius: 40px;
+        }
+    </style>
+    <section class="cnt">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 first">
+                    <h1>Make it Awesome!</h1>
+                    <p>There's nothing we wont try. Never heard the word impossible. This time there's no stopping us.
+                        The year is 1987 and NASA launches the last of Americas deep space probes.</p>
+                </div>
+                <div class="col-12 col-md-4 second">
+                    <a href="#">Hire me now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .feedback {
+            padding: 160px 0;
+            background-color: #f4f4f4;
+        }
+
+        .feedback h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 5vh;
+            color: black;
+            text-align: center;
+            quotes: "\201C""\201D""\2018""\2019";
+            width: 500px;
+            margin: 0 auto;
+            /* Cái quote ở phía trên để thêm cái ngoặc vào */
+            position: relative;
+        }
+
+        .feedback h3::before {
+            color: #ccc;
+            content: open-quote;
+            font-size: 20vh;
+            line-height: 0.1em;
+            /* margin-right: 0.25em; */
+            /* vertical-align: -0.5em; */
+            position: absolute;
+            top: 75px;
+            left: 0;
+        }
+
+        .feedback-item {
+            text-align: center;
+        }
+
+        .owl-carousel .owl-item img {
+            margin: 10px auto;
+            /* object-fit: cover; */
+            width: 100px;
+            height: auto;
+            /* background-color: blue; */
+        }
+
+        .owl-carousel button.owl-dot {
+            width: 20px;
+            height: 20px;
+            /* background-color: blue; */
+            /* padding: 5px !important; */
+            margin-right: 10px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* .owl-dots {
+                text-align: center;
+                margin: 20px auto;
+            } */
+        .owl-theme .owl-dots .owl-dot span {
+            /* transition: 1s; */
+            margin: 0 auto;
+        }
+
+        .owl-carousel button.owl-dot span {
+            /* transform: translate(-50%,0); */
+            /* text-align: center; */
+            /* padding : 10px; */
+        }
+
+        .owl-carousel button.owl-dot.active {
+            border: 1px solid var(--main-color);
+        }
+
+        .owl-carousel button.owl-dot.active span {
+            /* border: 1px solid var(--main-color); */
+            /* transition: 0.5s;
+            width: 40px; */
+        }
+
+        .owl-carousel button.owl-dot:focus {
+            outline: none;
+        }
+    </style>
+
+    <section class="feedback">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>What clients feedback about me</h3>
+                    <div class="owl-carousel owl-theme">
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                        <div class="feedback-item">
+                            <img src="portfolio-website-template_17.png" alt="avata" class="feedback-avata">
+                            <h4>John One</h4>
+                            <p class="feedback-job">CEO</p>
+                            <p class="feedback-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi voluptatum quidem,
+                                deserunt nulla corrupti consequuntur asperiores quos culpa impedit rerum sint quasi?
+                                Fuga vel, illum asperiores consequatur perferendis autem repellat?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                items: 1,
+                lazyLoad: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true
+                // responsive: {
+                //     0: {
+                //         items: 1
+                //     },
+                //     600: {
+                //         items: 3
+                //     },
+                //     1000: {
+                //         items: 5
+                //     }
+                // }
+            })
+        });
+    </script>
+    <style>
+        footer {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .foot-menu {
+            /* display: flex; */
+            margin: 0 auto;
+        }
+
+        .foot-menu nav {
+            float: left;
+            /* background-color: brown; */
+            margin: 0;
+            padding: 10px 20px;
+
+        }
+
+        .foot-menu nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .foot-menu nav ul li {
+            padding: 0;
+            float: left;
+            margin: 0 30px;
+        }
+
+        .foot-menu nav ul li a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: black;
+            opacity: 0.8;
+        }
+        .foot-menu nav ul li a:hover{
+            color: var(--main-color);
+        }
+        .foot-menu .search {
+            float: left;
+            margin-left: 30px;
+            /* background-color: blue; */
+            width: 400px;
+            position: relative;
+        }
+
+        .foot-menu .search input {
+            border-radius: 40px;
+            padding: 10px 20px;
+            font-size: 18px;
+            width: 100%;
+            /* border: none; */
+        }
+        .foot-menu .search input:hover{
+            color: var(--main-color);
+            border: 1px solid var(--main-color);
+        }
+        .foot-menu .search:hover i{
+            color: var(--main-color);
+            cursor: pointer;
+        }
+        .foot-menu .search input:focus{
+            outline: none;
+        }
+        .foot-menu .search input:active + i{
+            color: var(--main-color);
+        }
+        .foot-menu .search input:active{
+            border: 1px solid var(--main-color);
+            outline: none;
+        }
+        .foot-menu .search input:focus{
+            border: 1px solid var(--main-color);
+            outline: none;
+        }
+        .foot-menu .search input:focus + i{
+            color: var(--main-color);
+        }
+
+        .foot-menu .search i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            font-size: 25px;
+            transform: translateY(-50%);
+        }
+
+        .media {
+            margin: 0 auto;
+        }
+
+        .media .social-media {
+            padding: 20px 30px;
+            width: 100%;
+            /* background-color: brown; */
+            display: block;
+            text-align: center;
+        }
+
+        .media .contact a i {
+            font-size: 35px;
+            color: white;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+            /* background-color: tomato;    */
+
+
+        }
+
+        .media .contact a {
+            text-align: center;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            padding: 2% 1%;
+            background-color: var(--main-color);
+            margin: 0 50px;
+            border-radius: 50%;
+        }
+
+        .footer-copyright {
+            display: block;
+            padding: 20px 30px;
+            margin-top: 50px;
+
+            /* background-color: brown; */
+        }
+    </style>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="foot-menu clearfix">
+                    <div class="col-md-12 col-12 menu">
+                        <nav>
+                            <ul class="clearfix">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Demo</a></li>
+                                <li><a href="#">Hire me</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="col-md-12 social-media">
+                        <div class="contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 footer-copyright">
+                    Copyright @2019 PSD Template
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

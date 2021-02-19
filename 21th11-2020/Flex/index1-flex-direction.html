@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+        }
+        div.flex-container > div{
+            background-color: burlywood;
+            margin: 30px;
+            padding: 30px;
+            width: 15%;
+        }
+        .first{
+            background-color: blue;
+            flex-direction: row;
+        }
+        .second{
+            background-color: red;
+            flex-direction: row-reverse;
+        }
+        .third{
+            background-color: chartreuse;
+            flex-direction: column;
+        }
+        .fourth{
+            background-color: cornflowerblue;
+            flex-direction: column-reverse;
+        }
+        li{
+            background-color: cornflowerblue;
+            display: block;
+        }
+        ul{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thuộc tính flex trong HTML
+        display: flex;
+    </pre>
+    <ul class="flex-container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <div class="flex-container first">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <div class="flex-container second">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="flex-container third">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div class="flex-container fourth">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
